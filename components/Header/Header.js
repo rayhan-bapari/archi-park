@@ -168,7 +168,7 @@ const Header = () => {
                 </ul>
                 {/* mobile menu */}
                 <div
-                    className={`absolute top-full left-0 bg-[--secondary-color] h-screen w-[340px] transform transition-transform duration-500 ease-in-out z-[999] p-0 inline-block md:hidden ${
+                    className={`absolute top-full left-0 bg-[--secondary-color] h-screen w-full transform transition-transform duration-500 ease-in-out z-[999] p-0 inline-block md:hidden ${
                         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
                     }`}
                 >
@@ -257,7 +257,6 @@ const Header = () => {
                     )}
                 </button>
             </nav>
-            {/* mobile menu */}
         </header>
     );
 };
