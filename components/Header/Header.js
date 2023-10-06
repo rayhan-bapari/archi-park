@@ -109,7 +109,7 @@ const Header = () => {
                 </Link>
             </div>
             <nav
-                className={`flex items-center justify-between px-[1.87rem] h-[60px] lg:h-[80px]
+                className={`flex items-center justify-between px-4 md:px-[1.87rem] h-[60px] lg:h-[80px]
                 ${
                     isHeaderFixed
                         ? "fixed top-0 left-0 right-0 z-[999] bg-[#282d32] shadow-lg md:flex-row-reverse slide-down"
@@ -177,7 +177,7 @@ const Header = () => {
                             <li key={index}>
                                 <Link
                                     href={item.link}
-                                    className={`font-medium leading-[187.5%] text-base uppercase tracking-[0.02rem] inline-block relative px-[1.87rem] py-[10px] transition-all duration-300 hover:text-[--main-color] ${
+                                    className={`font-medium leading-[187.5%] text-base uppercase tracking-[0.02rem] inline-block relative px-4 md:px-[1.87rem] py-[10px] transition-all duration-300 hover:text-[--main-color] ${
                                         currentRoute === item.link ? "text-[--main-color]" : "text-white"
                                     }`}
                                 >
