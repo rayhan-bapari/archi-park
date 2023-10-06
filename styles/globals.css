@@ -3,13 +3,23 @@
 @tailwind utilities;
 
 :root {
-    --main-color: #57b7c0;
-    --text-color: #212529;
+    --main-color: #c6a47e;
+    --secondary-color: #282d32;
 }
 
-nav {
-    background: rgb(255, 255, 255);
-    width: 100%;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 0px;
+body {
+    background-color: var(--secondary-color);
+}
+
+.slide-down {
+    animation: slide-down 0.5s ease-out;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
