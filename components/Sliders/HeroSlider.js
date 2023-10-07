@@ -68,7 +68,7 @@ export default function HeroSlider() {
                         >
                             {slider.image.src ? (
                                 <div
-                                    className="flex flex-col justify-center items-center w-[20rem] h-[22rem] px-6 md:w-[41.375rem] md:h-[19.125rem] z-50"
+                                    className="flex flex-col justify-center items-center w-[20rem] h-[22rem] px-6 md:w-[41.375rem] md:h-[19.125rem] z-50 backdrop-blur-md"
                                     style={{
                                         background: "rgba(33, 37, 41, 0.70)",
                                     }}
