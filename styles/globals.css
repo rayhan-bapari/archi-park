@@ -43,9 +43,72 @@ body {
 
 #about {
     width: 100%;
-    height: 45rem;
     background-image: url("../public/bg-pattern.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @apply md:h-[50rem];
+}
+
+.proj-1 {
+    background-image: url("../public/projects/project-1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.proj-2 {
+    background-image: url("../public/projects/project-2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.proj-3 {
+    background-image: url("../public/projects/project-3.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.proj-4 {
+    background-image: url("../public/projects/project-4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.proj-5 {
+    background-image: url("../public/projects/project-5.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.proj-6 {
+    background-image: url("../public/projects/project-6.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.proj-1::before,
+.proj-2::before,
+.proj-3::before,
+.proj-4::before,
+.proj-5::before,
+.proj-6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
