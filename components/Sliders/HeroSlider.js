@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import sliderImg1 from "../../public/slider/slider-1.webp";
 import sliderImg2 from "../../public/slider/slider-2.webp";
@@ -12,7 +13,6 @@ import "swiper/css/navigation";
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 
 import { Poppins } from "next/font/google";
-import Link from "next/link";
 
 const poppins = Poppins({
     weight: ["400", "500", "600"],
@@ -42,7 +42,7 @@ export default function HeroSlider() {
     ];
 
     return (
-        <>
+        <section>
             <Swiper
                 style={{
                     "--swiper-navigation-color": "#fff",
@@ -124,6 +124,6 @@ export default function HeroSlider() {
                     </div>
                 </div>
             </Swiper>
-        </>
+        </section>
     );
 }
