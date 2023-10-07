@@ -4,6 +4,7 @@ import sliderImg1 from "../../public/slider/slider-1.webp";
 import sliderImg2 from "../../public/slider/slider-2.webp";
 import sliderImg3 from "../../public/slider/slider-3.webp";
 import { BiSolidRightArrow } from "react-icons/bi";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -52,9 +53,12 @@ export default function HeroSlider() {
                 pagination={{
                     clickable: true,
                 }}
-                navigation={true}
+                navigation={{
+                    nextEl: ".customer-swiper-button-next",
+                    prevEl: ".customer-swiper-button-prev",
+                }}
                 modules={[Parallax, Pagination, Navigation]}
-                className="mySwiper"
+                className="mySwiper relative"
             >
                 {sliderData.map((slider, index) => (
                     <SwiperSlide key={index}>
@@ -105,6 +109,20 @@ export default function HeroSlider() {
                         </div>
                     </SwiperSlide>
                 ))}
+                <div className="custom-navigation">
+                    <div className="customer-swiper-button-prev">
+                        <BsArrowLeftCircle
+                            size={40}
+                            className="text-[--main-color] cursor-pointer absolute top-[90%] md:top-1/2 left-[1.56rem] z-[99]"
+                        />
+                    </div>
+                    <div className="customer-swiper-button-next">
+                        <BsArrowRightCircle
+                            size={40}
+                            className="text-[--main-color] cursor-pointer  absolute top-[90%] md:top-1/2 right-[1.56rem] z-[99]"
+                        />
+                    </div>
+                </div>
             </Swiper>
         </>
     );
