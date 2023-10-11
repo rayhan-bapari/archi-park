@@ -180,3 +180,13 @@ body {
 .counter__number {
     @apply text-white text-center text-[42px] font-normal leading-normal;
 }
+
+
+#team {
+    width: 100%;
+    background-image: url("../public/bg-pattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @apply md:h-[45rem];
+}
