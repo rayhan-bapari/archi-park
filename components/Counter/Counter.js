@@ -13,8 +13,8 @@ const irish_grover = Irish_Grover({
 const Counter = () => {
     return (
         <section>
-            <div className="container px-4 md:px-[189px] mt-[128px] h-[200px] bg-[--main-color] ">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 h-full items-center">
+            <div className="mt-[128px] lg:h-[200px] bg-[--main-color] ">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap- w-full h-full items-center px-4 md:px-[189px]">
                     <div className="counter">
                         <div className="counter__number" style={irish_grover.style}>
                             <CountUp

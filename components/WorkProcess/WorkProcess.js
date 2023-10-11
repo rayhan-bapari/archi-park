@@ -43,7 +43,7 @@ const WorkProcess = () => {
                             className="h-[400px] md:h-[800px] object-cover bg-cover bg-center bg-no-repeat"
                         />
                     </div>
-                    <div className="process-content h-[400px] md:h-[800px] pt-[38px] px-4 md:pl-[50px] pb-[50px]">
+                    <div className="process-content h-auto md:h-[800px] pt-[38px] px-4 md:pl-[50px] pb-[50px]">
                         <h2 className="text-white text-[36px] font-semibold leading-normal" style={poppins.style}>
                             WATCH US HOW WE
                         </h2>
