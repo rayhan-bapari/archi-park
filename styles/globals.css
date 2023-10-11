@@ -168,3 +168,15 @@ body {
     height: 2px;
     background-color: var(--main-color);
 }
+
+.counter {
+    @apply flex flex-col items-center;
+}
+
+.counter__title {
+    @apply text-[22px] font-normal text-center text-white leading-normal;
+}
+
+.counter__number {
+    @apply text-white text-center text-[42px] font-normal leading-normal;
+}

@@ -1,4 +1,5 @@
 import AboutComp from "@/components/AboutComp/AboutComp";
+import Counter from "@/components/Counter/Counter";
 import LatestProjects from "@/components/LatestProjects/LatestProjects";
 import Layout from "@/components/Layout/Layout";
 import ServiceComp from "@/components/ServiceComp/ServiceComp";
@@ -14,6 +15,7 @@ const Home = () => {
             <LatestProjects />
             <ServiceComp />
             <WorkProcess />
+            <Counter />
         </Layout>
     );
 };
