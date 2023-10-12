@@ -60,6 +60,7 @@ const ClientLogo = () => {
                     pauseOnClick={true}
                     gradient={false}
                     speed={50}
+                    autoFill={true}
                     className=" h-full flex items-center justify-center"
                 >
                     {clientLogoData.map((item) => (
