@@ -1,5 +1,7 @@
 import AboutComp from "@/components/AboutComp/AboutComp";
+import BlogComp from "@/components/BlogComp/BlogComp";
 import ClientLogo from "@/components/ClientLogo/ClientLogo";
+import ConsultancyForm from "@/components/ConsultancyForm/ConsultancyForm";
 import Counter from "@/components/Counter/Counter";
 import LatestProjects from "@/components/LatestProjects/LatestProjects";
 import Layout from "@/components/Layout/Layout";
@@ -38,6 +40,8 @@ const Home = () => {
                 <TeamComp />
                 <Testimonial />
                 <ClientLogo />
+                <BlogComp />
+                <ConsultancyForm />
             </Layout>
         </>
     );
