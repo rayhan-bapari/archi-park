@@ -1,4 +1,5 @@
 import AboutComp from "@/components/AboutComp/AboutComp";
+import ClientLogo from "@/components/ClientLogo/ClientLogo";
 import Counter from "@/components/Counter/Counter";
 import LatestProjects from "@/components/LatestProjects/LatestProjects";
 import Layout from "@/components/Layout/Layout";
@@ -36,6 +37,7 @@ const Home = () => {
                 <Counter />
                 <TeamComp />
                 <Testimonial />
+                <ClientLogo />
             </Layout>
         </>
     );

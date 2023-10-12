@@ -14,7 +14,7 @@ const Counter = () => {
     return (
         <section>
             <div className="mt-[128px] lg:h-[200px] bg-[--main-color] ">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap- w-full h-full items-center px-4 md:px-[189px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap- w-full h-full items-center py-6 md:py-0 px-4 md:px-[189px]">
                     <div className="counter">
                         <div className="counter__number" style={irish_grover.style}>
                             <CountUp
