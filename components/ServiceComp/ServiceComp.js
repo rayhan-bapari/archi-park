@@ -50,7 +50,7 @@ const ServiceComp = () => {
                     {serviceData.map((item) => (
                         <div
                             key={item.id}
-                            className="service-card md:w-[393px] bg-[#353C43] inline-flex flex-col items-center px-[45px] py-[80px]"
+                            className="service-card md:w-[393px] 3xl:w-auto bg-[#353C43] inline-flex flex-col items-center px-[45px] py-[80px]"
                         >
                             <div className="service-card__image">
                                 <Image src={item.image} alt={item.title} className="w-[48px] h-[52px] object-cover" />

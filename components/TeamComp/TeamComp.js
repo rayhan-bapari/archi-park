@@ -24,8 +24,8 @@ const TeamComp = () => {
     const teamData = [
         {
             id: 1,
-            name: "John Doe",
-            position: "CEO & Founder",
+            name: "Sarah Ali",
+            position: "Director",
             img: team1,
             socialLinks: [
                 {
@@ -50,8 +50,8 @@ const TeamComp = () => {
         },
         {
             id: 2,
-            name: "Sarah Ali",
-            position: "CEO & Founder",
+            name: "John Doe",
+            position: "ARCHITECT",
             img: team2,
             socialLinks: [
                 {
@@ -77,7 +77,7 @@ const TeamComp = () => {
         {
             id: 3,
             name: "Marry Doe",
-            position: "CEO & Founder",
+            position: "ARCHITECT",
             img: team3,
             socialLinks: [
                 {
@@ -103,7 +103,7 @@ const TeamComp = () => {
         {
             id: 4,
             name: "John Smith",
-            position: "CEO & Founder",
+            position: "ARCHITECT",
             img: team4,
             socialLinks: [
                 {
@@ -129,7 +129,7 @@ const TeamComp = () => {
         {
             id: 5,
             name: "Sarah Ali",
-            position: "CEO & Founder",
+            position: "Director",
             img: team3,
             socialLinks: [
                 {
@@ -155,7 +155,7 @@ const TeamComp = () => {
         {
             id: 6,
             name: "Ben Doe",
-            position: "CEO & Founder",
+            position: "ARCHITECT",
             img: team2,
             socialLinks: [
                 {

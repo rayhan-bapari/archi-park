@@ -109,11 +109,11 @@ const Header = () => {
                 </Link>
             </div>
             <nav
-                className={`flex items-center justify-between px-4 md:px-[1.87rem] h-[60px] lg:h-[80px]
+                className={`flex items-center justify-between px-4 md:px-[1.87rem] h-[60px] lg:h-[80px] container
                 ${
                     isHeaderFixed
                         ? "fixed top-0 left-0 right-0 z-[999] bg-[#282d32] shadow-lg md:flex-row-reverse slide-down"
-                        : "container"
+                        : ""
                 }
             `}
             >

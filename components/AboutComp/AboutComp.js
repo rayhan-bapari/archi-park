@@ -25,8 +25,8 @@ const AboutComp = () => {
                 >
                     Welcome to <span className="highlight text-[--main-color]">Archipark</span>
                 </h2>
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center py-[4rem]">
-                    <div className="about-left">
+                <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center py-[4rem]">
+                    <div className="about-left flex justify-center">
                         <Image src={aboutImg} alt="about-img" className="object-cover h-[550px]" />
                     </div>
                     <div className="about-right">
