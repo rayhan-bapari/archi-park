@@ -11,7 +11,7 @@ const ConsultancyForm = () => {
     };
     return (
         <section>
-            <div className="md:h-[200px] bg-[#353C43] lg:px-[100px] flex flex-col items-start lg:flex-row lg:items-center py-6 lg:py-0 lg:gap-[80px]">
+            <div className="lg:h-[200px] bg-[#353C43] px-6 lg:px-[100px] flex flex-col items-start lg:flex-row lg:items-center py-6 lg:py-0 lg:gap-[80px]">
                 <h2 className="text-[--main-color] text-[34px] font-medium leading-normal" style={poppins.style}>
                     Design Consultancy
                 </h2>
