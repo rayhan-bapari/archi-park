@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import team1 from "../../public/team/team-1.png";
-import team2 from "../../public/team/team-2.png";
-import team3 from "../../public/team/team-3.png";
-import team4 from "../../public/team/team-4.png";
+import team1 from "../../../public/team/team-1.png";
+import team2 from "../../../public/team/team-2.png";
+import team3 from "../../../public/team/team-3.png";
+import team4 from "../../../public/team/team-4.png";
 
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 

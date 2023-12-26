@@ -20,7 +20,8 @@ const poppins = Poppins({
 });
 
 const Header = () => {
-    const currentRoute = useRouter().pathname;
+    const router = useRouter();
+    const [currentSection, setCurrentSection] = useState("home");
     const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
     const searchBarRef = useRef(null);
     const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -38,16 +39,30 @@ const Header = () => {
         setIsSearchBarOpen(!isSearchBarOpen);
     };
 
-    const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 80) {
-            setIsHeaderFixed(true);
-        } else {
-            setIsHeaderFixed(false);
-        }
-    };
-
     useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll("section");
+            let found = false;
+
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 80 && rect.bottom >= 80 && !found) {
+                    setCurrentSection(section.id);
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                setCurrentSection(null);
+            }
+
+            if (window.scrollY > 100) {
+                setIsHeaderFixed(true);
+            } else {
+                setIsHeaderFixed(false);
+            }
+        };
+
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -73,27 +88,27 @@ const Header = () => {
     const NavItems = [
         {
             name: "Home",
-            link: "/",
+            link: "#home",
         },
         {
             name: "About us",
-            link: "/about",
+            link: "#about",
         },
         {
             name: "Projects",
-            link: "/projects",
+            link: "#projects",
         },
         {
             name: "Services",
-            link: "/services",
+            link: "#services",
         },
         {
-            name: "Blog",
-            link: "/blog",
+            name: "Blogs",
+            link: "#blogs",
         },
         {
             name: "Contact us",
-            link: "/contact",
+            link: "#contact",
         },
     ];
 
@@ -158,7 +173,9 @@ const Header = () => {
                             <Link
                                 href={item.link}
                                 className={`font-medium leading-[187.5%] text-base uppercase tracking-[0.02rem] inline-block relative py-[30px] transition-all duration-300 hover:text-[--main-color] ${
-                                    currentRoute === item.link ? "text-[--main-color]" : "text-white"
+                                    currentSection === item.link.replace("#", "")
+                                        ? "text-[--main-color] font-bold"
+                                        : "text-white"
                                 }`}
                             >
                                 {item.name}
@@ -178,7 +195,9 @@ const Header = () => {
                                 <Link
                                     href={item.link}
                                     className={`font-medium leading-[187.5%] text-base uppercase tracking-[0.02rem] inline-block relative px-4 md:px-[1.87rem] py-[10px] transition-all duration-300 hover:text-[--main-color] ${
-                                        currentRoute === item.link ? "text-[--main-color]" : "text-white"
+                                        currentSection === item.link.replace("#", "")
+                                            ? "text-[--main-color]"
+                                            : "text-white"
                                     }`}
                                 >
                                     {item.name}

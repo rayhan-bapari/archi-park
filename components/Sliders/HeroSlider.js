@@ -42,7 +42,7 @@ export default function HeroSlider() {
     ];
 
     return (
-        <section>
+        <section id="home">
             <Swiper
                 style={{
                     "--swiper-navigation-color": "#fff",

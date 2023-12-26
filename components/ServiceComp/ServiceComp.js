@@ -38,7 +38,7 @@ const ServiceComp = () => {
     ];
 
     return (
-        <section>
+        <section id="services">
             <div className="container py-[85px]">
                 <h2
                     className="text-center text-white text-[1.45rem] sm:text-[2.25rem] font-semibold leading-normal tracking-[0.1125rem] uppercase"

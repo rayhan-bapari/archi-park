@@ -159,6 +159,7 @@ const Footer = () => {
             <div className="copyright py-[15px] border-t border-white border-opacity-[0.15]">
                 <p className="text-[#FAF8F2] text-base font-normal leading-normal text-center" style={poppins.style}>
                     &copy; {currentYear} <span className="text-[#FAF8F2]">Archipark</span>. All Rights Reserved.
+                    Developerd by <Link href="#">CodeNest</Link>
                 </p>
             </div>
         </footer>

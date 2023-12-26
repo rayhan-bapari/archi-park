@@ -19,17 +19,17 @@ const ConsultancyForm = () => {
                     onSubmit={handleSubmit}
                     className="flex flex-col items-start lg:flex-row lg:items-center gap-[30px]"
                 >
-                    <div class="flex items-center border-b-2 border-white/25 py-2 w-[287px]">
+                    <div className="flex items-center border-b-2 border-white/25 py-2 w-[287px]">
                         <input
-                            class="appearance-none bg-transparent border-none w-full text-white text-base font-normal leading-normal  focus:outline-none"
+                            className="appearance-none bg-transparent border-none w-full text-white text-base font-normal leading-normal  focus:outline-none"
                             type="text"
                             placeholder="Your Name"
                             style={poppins.style}
                         />
                     </div>
-                    <div class="flex items-center border-b-2 border-white/25 py-2 w-[287px]">
+                    <div className="flex items-center border-b-2 border-white/25 py-2 w-[287px]">
                         <input
-                            class="appearance-none bg-transparent border-none w-full text-white text-base font-normal leading-normal  focus:outline-none"
+                            className="appearance-none bg-transparent border-none w-full text-white text-base font-normal leading-normal  focus:outline-none"
                             type="text"
                             placeholder="Your Email"
                             style={poppins.style}

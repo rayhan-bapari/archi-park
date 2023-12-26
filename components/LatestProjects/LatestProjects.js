@@ -7,7 +7,7 @@ const poppins = Poppins({
 });
 const LatestProjects = () => {
     return (
-        <section>
+        <section id="projects">
             <div className="container px-0">
                 <h2
                     className="text-center text-white text-[1.45rem] sm:text-[2.25rem] font-semibold leading-normal tracking-[0.1125rem] uppercase pt-[91px] pb-[67px]"
